@@ -1,0 +1,123 @@
+/* ==========================
+   RESPONSIVE STYLES
+========================== */
+
+/* GENERAL MOBILE SETTINGS */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero h2 {
+    font-size: 20px;
+  }
+
+  .summary-container {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-timeline {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* SMALL DEVICES (TABLET) */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero h2 {
+    font-size: 18px;
+  }
+
+  .btn {
+    padding: 8px 18px;
+    font-size: 13px;
+  }
+
+  .project-card img {
+    height: 160px;
+  }
+}
+
+/* EXTRA SMALL DEVICES (MOBILE) */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .hero h2 {
+    font-size: 16px;
+  }
+
+  .nav-links {
+    gap: 6px;
+  }
+
+  .summary-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .experience-card {
+    padding: 15px;
+  }
+}
+
+
+/* ==========================
+   RESPONSIVE
+========================== */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
