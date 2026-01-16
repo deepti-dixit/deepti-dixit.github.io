@@ -1,253 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- icons -->
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Deepti Dixit | Full Stack .NET Developer</title>
+
+   <!-- Google Fonts -->
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Inter:wght@400;500&display=swap"
+      rel="stylesheet">
+
+   <!-- Main CSS -->
+   <link rel="stylesheet" href="assets/css/style.css" />
+   <link rel="stylesheet" href="assets/css/responsive.css" />
+
+   <!-- Main JS -->
+   <script src="assets/js/main.js" defer></script>
 </head>
+
 <body>
-  <div class="wrapper">
-    <div class="cover cover-left"></div>
-    <div class="cover cover-right"></div>
 
-    <div class="book">
-      <div class="book-page page-left">
-        <div class="profile-page">
-          <img src="profile.jpg" alt="">
-          <h1>Deepti Dixit</h1>
-          <h3>React Developer</h3>
+   <!-- ===== NAVBAR ===== -->
+   <header class="header">
+      <nav class="navbar">
+         <div class="logo">Deepti Dixit</div>
+         <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+         </ul>
+      </nav>
+   </header>
 
-          <div class="social-media">
-            <a href="https://github.com/deepti-dixit"><i class='bx bxl-github' ></i></a>
-            <a href="https://www.linkedin.com/in/developerdeepti"><i class='bx bxl-linkedin'></i></a>
-            <a href="mailto:webdev.deepti@gmail.com"><i class='bx bx-envelope' ></i></a>
-            <a href="https://wa.me/917518747941"><i class='bx bxl-whatsapp' ></i></a>
-            <a href="https://www.facebook.com/mmadeeptidixit"><i class='bx bxl-facebook'></i></a>
-            <a href="https://www.instagram.com/mmadeeptidixit"><i class='bx bxl-instagram' ></i></a>
-          </div>
+   <!-- ===== HERO SECTION ===== -->
+   <section class="hero">
+      <div class="hero-content">
+         <h2>Hello, My name's <span>Deepti Dixit</span></h2>
+         <h1>Full Stack .NET Developer</h1>
+         <p>
+            I build clean, scalable and user-focused web applications using
+            modern frontend technologies and enterprise-level development practices.
+         </p>
 
-          <p>Pursuing <strong></strong>B.Tech in Computer Science with expertise in <strong>Front-End Development</strong>, proficient in JavaScript, HTML, CSS, and ES6. Eager to contribute fresh perspectives and learn quickly within a collaborative team environment to build engaging web applications.</p>
+         <div class="hero-buttons">
+            <a href="assets/resume/Deepti_Dixit_Resume.pdf" class="btn primary" target="_blank">Download Resume</a>
+         </div>
+      </div>
+   </section>
 
-          <div class="btn-box">
-            <a href="#" class="btn">Download CV</a>
-            <a href="#" class="btn contact-me">Contact Me</a>
-          </div>
-        </div>
+   <!-- ===== QUICK SUMMARY ===== -->
+   <section class="summary">
+      <div class="summary-container">
+         <div class="summary-box">
+            <h3>Experience</h3>
+            <p>4.5+ Years</p>
+         </div>
+         <div class="summary-box">
+            <h3>Specialization</h3>
+            <p>Web Applications</p>
+         </div>
+         <div class="summary-box">
+            <h3>Projects</h3>
+            <p>10+ Completed</p>
+         </div>
+      </div>
+   </section>
+
+   <!-- ===== CTA SECTION ===== -->
+   <section class="cta">
+      <h2>Looking for a Full Stack .NET Developer?</h2>
+      <p>Let’s build something impactful together.</p>
+      <a href="contact.html" class="call-btn">Call Now</a>
+   </section>
+
+<!-- ===== WHY WORK WITH ME ===== -->
+<section class="why-me">
+  <div class="container">
+    <h2 class="title">Why Work With Me</h2>
+    <p class="page-subtitle">
+      I focus on building reliable, scalable, and user-friendly web applications
+      with a strong understanding of both design and development.
+    </p>
+
+    <div class="why-grid">
+      <div class="why-card">
+        <h3>Problem Solving Approach</h3>
+        <p>
+          I design and develop web applications by understanding real user needs,
+          ensuring usability, performance, and clarity.
+        </p>
       </div>
 
-      <!-- page 1 & 2 -->
-      <div class="book-page page-right turn" id="turn-1">
-        <!-- work experience -->
-        <div class="page-front">
-          <h1 class="title">Work Experience</h1>
-          <div class="workeduc-box">
-            <div class="workeduc-content">
-              <span class="year"><i class='bx bxs-calendar'></i>2020 - 2021</span>
-              <h3>Web Developer - Company</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit autem, nesciunt maiores molestias cupiditate obcaecati earum perspiciatis aut minus eveniet quae illum excepturi cum nam!</p>
-            </div>
-
-            <div class="workeduc-content">
-              <span class="year"><i class='bx bxs-calendar'></i>2020 - 2021</span>
-              <h3>Web Developer - Company</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit autem, nesciunt maiores molestias cupiditate obcaecati earum perspiciatis aut minus eveniet quae illum excepturi cum nam!</p>
-            </div>
-
-            <div class="workeduc-content">
-              <span class="year"><i class='bx bxs-calendar'></i>2020 - 2021</span>
-              <h3>Web Developer - Company</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit autem, nesciunt maiores molestias cupiditate obcaecati earum perspiciatis aut minus eveniet quae illum excepturi cum nam!</p>
-            </div>
-          </div>
-
-          <span class="number-page">1</span>
-          <span class="nextprev-btn" data-page="turn-1">
-            <i class='bx bxs-chevron-right' ></i>
-          </span>
-        </div>
-        <!-- education section start-->
-        <div class="page-back">
-          <h1 class="title">Education</h1>
-          <div class="workeduc-box">
-            <div class="workeduc-content">
-              <span class="year"><i class='bx bxs-calendar'></i>July 2022 - August 2025</span>
-              <h3>B.Tech - Computer Science and Engineering</h3>
-              <p>Apollo Institute of Technology from Kanpur uttar pradesh</p>
-            </div>
-
-            <div class="workeduc-content">
-              <span class="year"><i class='bx bxs-calendar'></i>2020 - 2021</span>
-              <h3>Web Developer - Company</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit autem, nesciunt maiores molestias cupiditate obcaecati earum perspiciatis aut minus eveniet quae illum excepturi cum nam!</p>
-            </div>
-
-            <div class="workeduc-content">
-              <span class="year"><i class='bx bxs-calendar'></i>July 2012 - May 2013</span>
-              <h3>Secondary Education - PCM</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit autem, nesciunt maiores molestias cupiditate obcaecati earum perspiciatis aut minus eveniet quae illum excepturi cum nam!</p>
-            </div>
-          </div>
-          <span class="number-page">2</span>
-          <span class="nextprev-btn back" data-page="turn-1">
-            <i class='bx bxs-chevron-left' ></i>
-          </span>
-        </div>
+      <div class="why-card">
+        <h3>Frontend to Full Stack Mindset</h3>
+        <p>
+          With strong experience in frontend and WordPress, I am actively
+          transitioning into Full Stack .NET development to build end-to-end solutions.
+        </p>
       </div>
 
-      <!-- page 3 & 4 -->
-
-      <div class="book-page page-right turn" id="turn-2">
-        <!-- page 3 (services) -->
-        <div class="page-front">
-          <h1 class="title">Services</h1>
-          <div class="services-box">
-            <div class="services-content">
-              <i class='bx bx-code-alt'></i>
-              <h3>Web Development</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione veritatis eum sunt. Reiciendis, corporis sequi.</p>
-              <a href="" class="btn">Read More</a>
-            </div>
-
-            <div class="services-content">
-              <i class='bx bx-code-alt'></i>
-              <h3>Web Development</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione veritatis eum sunt. Reiciendis, corporis sequi.</p>
-              <a href="" class="btn">Read More</a>
-            </div>
-
-            <div class="services-content">
-              <i class='bx bx-code-alt'></i>
-              <h3>Web Development</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione veritatis eum sunt. Reiciendis, corporis sequi.</p>
-              <a href="" class="btn">Read More</a>
-            </div>
-
-            <div class="services-content">
-              <i class='bx bx-code-alt'></i>
-              <h3>Web Development</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione veritatis eum sunt. Reiciendis, corporis sequi.</p>
-              <a href="" class="btn">Read More</a>
-            </div>
-
-            <span class="number-page">3</span>
-          <span class="nextprev-btn" data-page="turn-2">
-            <i class='bx bxs-chevron-right' ></i>
-          </span>
-          </div>
-        </div>
-
-
-        <!-- page 4 (skills) -->
-        <div class="page-back">
-          <h1 class="title">Skills</h1>
-
-          <div class="skilss-box">
-            <div class="skills-content">
-              <h3>Front-End</h3>
-              <div class="content">
-                <span><i class='bx bxl-html5' ></i>HTML</span>
-                <span><i class='bx bxl-css3' ></i>CSS</span>
-                <span><i class='bx bxl-bootstrap' ></i>Bootstrap</span>
-                <span><i class='bx bxl-tailwind-css' ></i>Tailwind</span>
-                <span><i class='bx bxl-javascript' ></i>JavaScript</span>
-                <span><i class='bx bxl-react' ></i>React</span>
-                <span>GSAP</span>
-                <span>Canvas</span>
-                <span>Locomotive</span>
-                <span>three.js</span>
-              </div>
-            </div>
-
-            <div class="skills-content">
-              <h3>Back-End</h3>
-              <div class="content">
-                <span><i class='bx bxl-php' ></i>PHP</span>
-                <span><i class='bx bxl-python' ></i>Python</span>
-                <span><i class='bx bxl-nodejs' ></i>Node.Js</span>
-              </div>
-            </div>
-
-            <div class="skills-content">
-              <h3>Tools</h3>
-              <div class="content">
-                <span><i class='bx bxl-php' ></i>Figma</span>
-                <span><i class='bx bxl-github' ></i>GitHub</span>
-                <span>Canva</span>
-              </div>
-            </div>
-
-            <span class="number-page">4</span>
-          <span class="nextprev-btn back" data-page="turn-2">
-            <i class='bx bxs-chevron-left' ></i>
-          </span>
-          </div>
-        </div>
-      </div>
-
-      <!-- ---------------------------------------------------------------------------------- -->
-      <!-- page 5 & 6 -->
-     <div class="book-page page-right turn" id="turn-3">
-        <!-- projects -->
-        <div class="page-fron">
-          <h1 class="title">Latest Projects</h1>
-
-          <div class="portfolio-box">
-            <div class="img-box">
-              <img src="" alt="">
-            </div>
-            <div class="info-box">
-              <div class="info-title">
-                <h3>Project Name</h3>
-                <a href="">Live Preview<i class='bx bx-link-external' ></i></a>
-              </div>
-              <p>Tech Used</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis a nesciunt velit numquam nulla sint nam odit? Deleniti rem voluptatum totam illo modi ratione quia in saepe, doloremque assumenda corrupti!</p>
-            </div>
-  
-            <div class="btn-box">
-              <a href="" class="btn">Source Code</a>
-              <a href="" class="btn">More Projects</a>
-            </div>
-          </div>
-
-           <span class="number-page">5</span>
-          <span class="nextprev-btn" data-page="turn-3">
-            <i class='bx bxs-chevron-right' ></i>
-          </span>
-        </div>
-
-        <!-- contact me -->
-        <div class="page-back">
-          <h1 class="title">Contact me</h1>
-
-          <div class="contact-box">
-            <form action="">
-              <input type="text" class="field" placeholder="Full Name" required>
-              <input type="email" class="field" placeholder="Email" required>
-              <textarea name="Your Message" id="" rows="10" cols="30" class="field" placeholder="Your Message"></textarea>
-              <input type="submit" value="Send Message" class="btn">
-            </form>
-          </div>
-
-          
-          <span class="number-page">6</span>
-          <span class="nextprev-btn back" data-page="turn-3">
-            <i class='bx bxs-chevron-left' ></i>
-          </span>
-
-          <a href="#" class="back-profile">
-            <p>Profile</p>
-            <i class='bx bxs-user' ></i>
-          </a>
-        </div>
-      </div>
+      <div class="why-card">
+        <h3>Professional & Scalable Code</h3>
+        <p>
+          I follow clean coding practices, structured layouts, and scalable
+          architecture suitable for enterprise-level applications.
+        </p>
       </div>
     </div>
- 
+    <div class="center-btn">
+         <a href="projects.html" class="btn primary">View Projects</a>
+    </div>
 
-  <script src="script.js"></script>
+  </div>
+</section>
+
+
+   <!-- ===== FOOTER ===== -->
+   <footer class="footer">
+      <p>© <span id="currentYear"></span> Deepti Dixit. All Rights Reserved.</p>
+   </footer>
+
+   <div class="imp-social-links">
+      <a href="#"><img src="assets/images/icons/linkedin.png" alt=""></a>
+      <a href="#"><img src="assets/images/icons/github.png" alt=""></a>
+      <a href="#"><img src="assets/images/icons/mail.png" alt=""></a>
+      <a href="#"><img src="assets/images/icons/call.png" alt=""></a>
+   </div>
 </body>
+
 </html>
