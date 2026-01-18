@@ -2,14 +2,47 @@
    RESPONSIVE STYLES
 ========================== */
 
+/* Mobile Styles */
+@media (max-width: 1025px) {
+  .nav-links {
+    display: none; /* Hide menu by default */
+    position: absolute;
+    top: 70px; /* Below header */
+    right: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: var(--bg-white);
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: var(--shadow-lg);
+    z-index: 999;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .menu-toggle {
+    display: flex; /* Show hamburger on mobile */
+  }
+
+  /* Show menu when active */
+  .nav-links.active {
+    display: flex;
+  }
+}
+
 /* GENERAL MOBILE SETTINGS */
 @media (max-width: 1024px) {
   .container {
     padding: 0 15px;
   }
+  .hero{
+    height: auto;
+  }
 
   .navbar {
-    flex-direction: column;
+    flex-direction: flex;
     gap: 10px;
   }
 
@@ -117,7 +150,7 @@
   }
 
   .navbar {
-    flex-direction: column;
+    flex-direction: flex;
     gap: 10px;
   }
 }
