@@ -1,6 +1,3 @@
-// ==========================
-// MAIN JS FOR PORTFOLIO
-// ==========================
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -77,3 +74,68 @@ const yearSpan = document.getElementById('currentYear');
 if (yearSpan) {
   yearSpan.textContent = new Date().getFullYear();
 }
+
+// menu toggle
+
+  const menuToggle = document.getElementById('mobile-menu');
+  const navLinks = document.querySelector('.nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    menuToggle.classList.toggle('open'); // toggle hamburger animation
+  });
+
+
+// emailjs
+document.addEventListener("DOMContentLoaded", function () {
+
+  emailjs.init("IkMI3BfRTUBU-5vPy");
+
+  const form = document.getElementById("contact-form");
+  const btn = document.getElementById("sendBtn");
+  const timeField = document.getElementById("time");
+
+  if (!form) return;
+
+  let isSending = false;
+  timeField.value = new Date().toLocaleString();
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    if (isSending) return;
+    isSending = true;
+    btn.disabled = true;
+    btn.innerText = "Sending...";
+
+    // send mail
+    emailjs.sendForm(
+      "service_tcxmd5a",
+      "template_85kvyvh",
+      form
+    ).then(() => {
+
+      // Auto reply mail
+      return emailjs.sendForm(
+        "service_tcxmd5a",
+        "template_02yu9ot",
+        form
+      );
+
+    }).then(() => {
+
+      alert("Message sent successfully ✅");
+      form.reset();
+
+    }).catch((err) => {
+      console.error(err);
+      alert("Failed ❌");
+    }).finally(() => {
+      isSending = false;
+      btn.disabled = false;
+      btn.innerText = "Send";
+    });
+
+  });
+
+});
