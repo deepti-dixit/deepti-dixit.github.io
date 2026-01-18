@@ -1,98 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | Deepti Dixit</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Deepti Dixit</title>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!-- emailjs cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  </head>
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="logo">Deepti Dixit</div>
 
-  <!-- Main JS -->
-  <script src="assets/js/main.js" defer></script>
-</head>
-<body>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
 
-  <!-- ===== NAVBAR ===== -->
-  <header class="header">
-    <nav class="navbar">
-      <div class="logo">Deepti Dixit</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="experience.html">Experience</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="projects.html">Projects</a></li>      
-        <li><a href="contact.html" class="active">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+        <!-- Hamburger -->
+        <div class="menu-toggle" id="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
 
-  <!-- ===== CONTACT PAGE ===== -->
-  <section class="contact-page">
-    <div class="container">
-      <h1 class="page-title">Contact Me</h1>
-      <p class="page-subtitle">
-        Interested in working together or discussing opportunities?
-        Feel free to reach out using the form below.
-      </p>
+    <!-- ===== CONTACT PAGE ===== -->
+    <section class="contact-page">
+      <div class="container">
+        <h1 class="page-title">Contact Me</h1>
+        <p class="page-subtitle">
+          Interested in working together or discussing opportunities? Feel free
+          to reach out using the form below.
+        </p>
 
-      <div class="contact-wrapper">
+        <div class="contact-wrapper">
+          <!-- Contact Form -->
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                required
+              />
+            </div>
 
-        <!-- Contact Form -->
-        <form class="contact-form" id="contactForm" novalidate>
-          <div class="form-group">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name" required />
-          </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+            <input type="hidden" name="time" id="time" />
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Write your message..."
+                required
+              ></textarea>
+            </div>
 
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="you@example.com" required />
-          </div>
+            <button type="submit" id="sendBtn" class="btn primary">Send Message</button>
+          </form>
 
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
-          </div>
-
-          <button type="submit" class="btn primary">Send Message</button>
-        </form>
-
-        <!-- Contact Info -->
-        <div class="contact-info">
-          <h2>Contact Details</h2>
-          <p><strong>Location:</strong> Lal Kuan, Ghaziabad, Uttar Pradesh</p>
-         
-          <h2 class="link-title">Professional Social Links</h2>
-          <ul class="social-links">
-            <li><a href="#"><img src="assets/images/icons/linkedin.png" alt=""></a></li>
-            <li><a href="#"><img src="assets/images/icons/github.png" alt=""></a></li>
-            <li><a href="#"><img src="assets/images/icons/mail.png" alt=""></a></li>
-            <li><a href="#"><img src="assets/images/icons/call.png" alt=""></a></li>
-          </ul>
-
-           <h2 class="link-title">Personal Social Links</h2>
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <h2>Contact Details</h2>
+            <p><strong>Whatsapp:</strong> 91-9335191007</p>
+            <p><strong>Email Id:</strong> deeptidixit2022@gmail.com</p>
+            <p><strong>Location:</strong> Lal Kuan, Ghaziabad, Uttar Pradesh</p>
+            <h2 class="link-title">Professional Social Links</h2>
             <ul class="social-links">
-            <li><a href="#"><img src="assets/images/icons/facebook.png" alt=""></a></li>
-            <li><a href="#"><img src="assets/images/icons/instagram.png" alt=""></a></li>
-            <li><a href="#"><img src="assets/images/icons/youtube.png" alt=""></a></li>
-            <li><a href="#"><img src="assets/images/icons/whatsapp.png" alt=""></a></li>
-            <li><a href="#"><img src="assets/images/icons/twitter.png" alt=""></a></li>
-          </ul>
+              <li>
+                <a href="https://deepti-dixit.github.io/"
+                  ><img
+                    src="assets/images/icons/portfolio-icon.png"
+                    alt=""
+                    width="40px"
+                /></a>
+              </li>
+              <li>
+                <a href="https://github.com/deepti-dixit"
+                  ><img src="assets/images/icons/github.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/deepti-dixit-developer/"
+                  ><img src="assets/images/icons/linkedin.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="mailto:deeptidixit2022@gmail.com"
+                  ><img src="assets/images/icons/mail.png" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <p>© 2025 Deepti Dixit. All Rights Reserved.</p>
-  </footer>
-
-</body>
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <p>© 2025 Deepti Dixit. All Rights Reserved.</p>
+    </footer>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
