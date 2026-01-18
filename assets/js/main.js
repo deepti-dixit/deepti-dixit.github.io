@@ -82,20 +82,52 @@ if (yearSpan) {
 
   menuToggle.addEventListener('click', () => {
     navLinks.classList.toggle('active');
-    menuToggle.classList.toggle('open'); // toggle hamburger animation
+    menuToggle.classList.toggle('open'); 
   });
 
-
-// emailjs
+  //    POPUP MODAL
 document.addEventListener("DOMContentLoaded", function () {
+
+  const popupOverlay = document.getElementById("popup-overlay");
+  const popupBox = popupOverlay.querySelector(".popup-box");
+  const popupIcon = document.getElementById("popupIcon");
+  const popupTitle = document.getElementById("popupTitle");
+  const popupMessage = document.getElementById("popupMessage");
+  const popupClose = document.getElementById("popupClose");
+
+  popupClose.addEventListener("click", () => {
+    popupOverlay.style.display = "none";
+  });
+
+  window.showPopup = function (type, title, message) {
+    popupOverlay.style.display = "flex";
+    popupBox.classList.remove("error");
+
+    if (type === "error") {
+      popupBox.classList.add("error");
+      popupIcon.innerHTML = "✕";
+    } else {
+      popupIcon.innerHTML = "✓";
+    }
+
+    popupTitle.innerText = title;
+    popupMessage.innerText = message;
+
+    setTimeout(() => {
+      popupOverlay.style.display = "none";
+    }, 4000);
+  };
+
+
+  /* ==========================
+     EMAILJS
+  ========================== */
 
   emailjs.init("IkMI3BfRTUBU-5vPy");
 
   const form = document.getElementById("contact-form");
   const btn = document.getElementById("sendBtn");
   const timeField = document.getElementById("time");
-
-  if (!form) return;
 
   let isSending = false;
   timeField.value = new Date().toLocaleString();
@@ -104,33 +136,44 @@ document.addEventListener("DOMContentLoaded", function () {
     e.preventDefault();
 
     if (isSending) return;
+
     isSending = true;
     btn.disabled = true;
     btn.innerText = "Sending...";
 
-    // send mail
     emailjs.sendForm(
       "service_tcxmd5a",
       "template_85kvyvh",
       form
-    ).then(() => {
-
-      // Auto reply mail
+    )
+    .then(() => {
       return emailjs.sendForm(
         "service_tcxmd5a",
         "template_02yu9ot",
         form
       );
+    })
+    .then(() => {
 
-    }).then(() => {
+      showPopup(
+        "success",
+        "Message Sent!",
+        "Thank you for contacting me. I will get back to you soon."
+      );
 
-      alert("Message sent successfully ✅");
       form.reset();
 
-    }).catch((err) => {
-      console.error(err);
-      alert("Failed ❌");
-    }).finally(() => {
+    })
+    .catch(() => {
+
+      showPopup(
+        "error",
+        "Failed!",
+        "Something went wrong. Please try again later."
+      );
+
+    })
+    .finally(() => {
       isSending = false;
       btn.disabled = false;
       btn.innerText = "Send";
