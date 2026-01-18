@@ -86,8 +86,19 @@
               ></textarea>
             </div>
 
-            <button type="submit" id="sendBtn" class="btn primary">Send Message</button>
+            <button type="submit" id="sendBtn" class="btn primary">
+              Send Message
+            </button>
           </form>
+          <!-- POPUP MODAL -->
+          <div id="popup-overlay" class="popup-overlay">
+            <div class="popup-box">
+              <span class="popup-close" id="popupClose">&times;</span>
+              <div class="popup-icon" id="popupIcon">✓</div>
+              <h3 id="popupTitle">Success</h3>
+              <p id="popupMessage">Your message has been sent.</p>
+            </div>
+          </div>
 
           <!-- Contact Info -->
           <div class="contact-info">
