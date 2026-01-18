@@ -1,211 +1,266 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Deepti Dixit</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects | Deepti Dixit</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Inter:wght@400;500&display=swap"
-    rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+<!-- emailjs cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  </head>
 
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="assets/css/responsive.css" />
-
-</head>
-
-<body>
-  <!-- ===== NAVBAR ===== -->
+  <body>
+    <!-- ===== NAVBAR ===== -->
   <header class="header">
-    <nav class="navbar">
-      <div class="logo">Deepti Dixit</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="experience.html">Experience</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="projects.html" class="active">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav class="navbar">
+    <div class="logo">Deepti Dixit</div>
 
-  <!-- ===== PROJECTS PAGE ===== -->
-  <section class="projects-page">
-    <div class="container">
-      <h1 class="section-title">Projects</h1>
-      <p class="page-subtitle">
-        A selection of my projects showcasing frontend, backend, and full-stack development skills. Click on the links
-        to explore live demos or code repositories.
-      </p>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
 
-      <h2 class="section-title">Full-Stack .NET Applications</h2>
-      <div class="projects-grid">
-        <!-- project 1 -->
-        <div class="project-card">
-          <img src="assets/images/projects/project1.png" alt="lifeOS" />
-          <div class="project-content">
-            <h3>Life Operating System</h3>
-            <p>Life Operating System (LOS) is a full-stack .NET application designed to help users manage multiple
-              aspects of life such as finance, career, health, and personal goals from a single platform.Currently, the
-              Finance Module is under active development.</p>
-            <ul>
-              <li>Secure user authentication</li>
-              <li>Category-based records</li>
-              <li>Monthly and yearly reports</li>
-              <li>Dashboard with charts</li>
-              <li>CRUD data management</li>
-              <li>Validation and error handling</li>
-            </ul>
-            <p><strong>Tech Stack:</strong> C#, ASP.NET Core, HTML5, CSS3, Bootstrap, JavaScript, jQuery, SQL Server,
-              Entity Framework, RESTful APIs, Git/GitHub, Visual Studio</p>
-            <div class="project-links">
-              <a href="#" target="_blank">Live Demo</a>
-              <a href="#" target="_blank">GitHub</a>
-            </div>
-          </div>
-        </div>
-        <!-- project 2 -->
-
-        <div class="project-card">
-          <img src="assets/images/projects/project2.png" alt="milegasupport" />
-          <div class="project-content">
-            <h3>Milega Support</h3>
-            <p>Milega Support is a full-stack .NET web application designed to provide free and paid support solutions
-              through online courses, webinars, eBooks, and guided assistance.</p>
-            <ul>
-              <li>Free and paid online courses</li>
-              <li>Role-based user access control</li>
-              <li>Live and recorded webinars</li>
-              <li>Webinar scheduling and user notifications</li>
-              <li>eBook sales with secure downloads</li>
-              <li>Free and premium support system</li>
-              <li>Secure payment gateway integration</li>
-              <li>User purchase and access history</li>
-            </ul>
-            <p><strong>Tech Stack:</strong> C#, ASP.NET Core, Web API, HTML, CSS, Bootstrap, JavaScript, SQL Server,
-              Entity Framework, Visual Studio</p>
-            <div class="project-links">
-              <a href="https://www.milegasupport.com/" target="_blank">Live Demo</a>
-              <a href="#" target="_blank">GitHub</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <h2 class="section-title">Web Development Projects</h2>
-      <div class="projects-grid">
-        <!-- project 3 -->
-        <div class="project-card">
-          <img src="assets/images/projects/project2.png" alt="Project 2" />
-          <div class="project-content">
-            <h3>Personal Branding Website</h3>
-            <p>A modern personal branding website designed to showcase professional identity, skills, experience, and
-              projects in a clean and structured way.</p>
-            <ul>
-              <li>Professional and responsive design</li>
-              <li>About, skills, and experience sections</li>
-              <li>Project and portfolio showcase</li>
-              <li>Resume / CV download option</li>
-              <li>Contact form and social media links</li>
-              <li>SEO-friendly structure</li>
-              <li>Fast loading and mobile optimized</li>
-            </ul>
-            <p><strong>Tech Stack:</strong>React.js, GSAP, JavaScript, HTML, CSS, Vite / Create React App</p>
-            <div class="project-links">
-              <a href="#" target="_blank">Live Demo</a>
-              <a href="#" target="_blank">GitHub</a>
-            </div>
-          </div>
-        </div>
-        <!-- project 4 -->
-
-        <div class="project-card">
-          <img src="assets/images/projects/project2.png" alt="Project 2" />
-          <div class="project-content">
-            <h3>Business Informative Website</h3>
-            <p>A professional business informative website developed for Divya Group to present their services in
-              construction, chemical earthing, lightning protection, and interior solutions.</p>
-            <ul>
-              <li>Single-page application built with React</li>
-              <li>Modular and reusable components</li>
-              <li>Service-focused business presentation</li>
-              <li>Responsive design for all devices</li>
-              <li>Fast loading and optimized performance</li>
-              <li>Contact and enquiry form integration</li>
-              <li>SEO-friendly page structure</li>
-              <li>Clean and professional UI</li>
-            </ul>
-            <p><strong>Tech Stack:</strong>React.js, JavaScript, HTML, CSS, Tailwind CSS</p>
-            <div class="project-links">
-              <a href="#" target="_blank">Live Demo</a>
-              <a href="#" target="_blank">GitHub</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <h2 class="section-title">WordPress Projects</h2>
-      <div class="projects-grid">
-        <!-- project 5 -->
-        <div class="project-card">
-          <img src="assets/images/projects/casikart.PNG" alt="casikart" />
-          <div class="project-content">
-            <h3>CASIKART – E-Commerce Website</h3>
-            <p>A fully functional eCommerce website built on WordPress to sell custom mobile accessories like phone
-              covers, skins, and cases.</p>
-            <ul>
-              <li>Responsive and modern eCommerce storefront</li>
-              <li>Product listing with multiple categories</li>
-              <li>Shopping cart & checkout functionality</li>
-              <li>Secure payment options (Cards, UPI, Wallets, COD)</li>
-              <li>Search and filter (Shop page organization)</li>
-              <li>Contact & order tracking pages</li>
-              <li>Newsletter signup integration</li>
-            </ul>
-            <p><strong>Tech Stack:</strong> WordPress CMS, WooCommerce, Elementor, Theme Customization, Responsive
-              Design, SEO & Performance Plugins</p>
-            <div class="project-links">
-              <a href="https://casikart.com/" target="_blank">Live Demo</a>
-            </div>
-          </div>
-        </div>
-        <!-- project 6 -->
-        <div class="project-card">
-          <img src="assets/images/projects/aadhar.PNG" alt="aadharfoundationngo" />
-          <div class="project-content">
-            <h3>Aadhar Foundation – Social Welfare Website</h3>
-            <p>A WordPress NGO website developed for Aadhar Foundation to showcase their social
-              initiatives including free education, health awareness, women empowerment, and social upliftment.</p>
-            <ul>
-              <li>Responsive and user-friendly NGO website</li>
-              <li>Donation and support information pages</li>
-              <li>Volunteer and contact enquiry forms</li>
-              <li>Gallery for events and campaigns</li>
-              <li>Blog / updates for awareness content</li>
-              <li>SEO-friendly and performance optimized</li>
-            </ul>
-            <p><strong>Tech Stack:</strong> WordPress CMS, Elementor, Theme Customization, Responsive
-              Design, SEO & Performance Plugins</p>
-            <div class="project-links">
-              <a href="https://aadharfoundationngo.org/" target="_blank">Live Demo</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Add more project cards as needed -->
-
-      </div>
+    <!-- Hamburger -->
+    <div class="menu-toggle" id="mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
-  </section>
+  </nav>
+</header>
 
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="container">
-      <p>© 2025 Deepti Dixit. All Rights Reserved.</p>
-    </div>
-  </footer>
-</body>
+    <!-- ===== PROJECTS PAGE ===== -->
+    <section class="projects-page">
+      <div class="container">
+        <h1 class="section-title">Projects</h1>
+        <p class="page-subtitle">
+          A selection of my projects showcasing frontend, backend, and
+          full-stack development skills. Click on the links to explore live
+          demos or code repositories.
+        </p>
 
+        <h2 class="section-title">Full-Stack .NET Applications</h2>
+        <div class="projects-grid">
+          <!-- project 1 -->
+          <div class="project-card">
+            <img src="assets/images/projects/project1.png" alt="lifeOS" />
+            <div class="project-content">
+              <h3>Life Operating System</h3>
+              <p>
+                Life Operating System (LOS) is a full-stack .NET application
+                designed to help users manage multiple aspects of life such as
+                finance, career, health, and personal goals from a single
+                platform.Currently, the Finance Module is under active
+                development.
+              </p>
+              <ul>
+                <li>Secure user authentication</li>
+                <li>Category-based records</li>
+                <li>Monthly and yearly reports</li>
+                <li>Dashboard with charts</li>
+                <li>CRUD data management</li>
+                <li>Validation and error handling</li>
+              </ul>
+              <p>
+                <strong>Tech Stack:</strong> C#, ASP.NET Core, HTML5, CSS3,
+                Bootstrap, JavaScript, jQuery, SQL Server, Entity Framework,
+                RESTful APIs, Git/GitHub, Visual Studio
+              </p>
+              <div class="project-links">
+                <a href="#" target="_blank">Live Demo</a>
+                <a href="#" target="_blank">GitHub</a>
+              </div>
+            </div>
+          </div>
+          <!-- project 2 -->
+
+          <div class="project-card">
+            <img
+              src="assets/images/projects/project2.png"
+              alt="milegasupport"
+            />
+            <div class="project-content">
+              <h3>Milega Support</h3>
+              <p>
+                Milega Support is a full-stack .NET web application designed to
+                provide free and paid support solutions through online courses,
+                webinars, eBooks, and guided assistance.
+              </p>
+              <ul>
+                <li>Free and paid online courses</li>
+                <li>Role-based user access control</li>
+                <li>Live and recorded webinars</li>
+                <li>Webinar scheduling and user notifications</li>
+                <li>eBook sales with secure downloads</li>
+                <li>Free and premium support system</li>
+                <li>Secure payment gateway integration</li>
+                <li>User purchase and access history</li>
+              </ul>
+              <p>
+                <strong>Tech Stack:</strong> C#, ASP.NET Core, Web API, HTML,
+                CSS, Bootstrap, JavaScript, SQL Server, Entity Framework, Visual
+                Studio
+              </p>
+              <div class="project-links">
+                <a href="https://www.milegasupport.com/" target="_blank"
+                  >Live Demo</a
+                >
+                <a href="#" target="_blank">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="section-title">Front-End Projects</h2>
+        <div class="projects-grid">
+          <!-- project 3 -->
+          <div class="project-card">
+            <img src="assets/images/projects/Portfolio.png" alt="Portfolio" />
+            <div class="project-content">
+              <h3>Portfolio Website</h3>
+              <p>
+                A modern personal branding website designed to showcase
+                professional identity, skills, experience, and projects in a
+                clean and structured way.
+              </p>
+              <ul>
+                <li>Professional and responsive design</li>
+                <li>About, skills, and experience sections</li>
+                <li>Project and portfolio showcase</li>
+                <li>Resume / CV download option</li>
+                <li>Contact form and social media links</li>
+                <li>SEO-friendly structure</li>
+                <li>Fast loading and mobile optimized</li>
+              </ul>
+              <p>
+                <strong>Tech Stack:</strong> HTML, CSS, Bootstrap, JavaScript.
+              </p>
+              <div class="project-links">
+                <a href="" target="_blank">Live Demo</a>
+                <a href="#" target="_blank">GitHub</a>
+              </div>
+            </div>
+          </div>
+          <!-- project 4 -->
+
+          <div class="project-card">
+            <img src="assets/images/projects/nexonsolar.png" alt="Project 2" />
+            <div class="project-content">
+              <h3>Business Informative Website</h3>
+              <p>
+                A professional solar informative website developed for Nexon
+                Solar to showcase solar panel solutions, rooftop solar systems,
+                and sustainable energy services for residential, commercial, and
+                industrial clients.
+              </p>
+              <ul>
+                <li>Service-focused business presentation</li>
+                <li>Responsive design for all devices</li>
+                <li>Fast loading and optimized performance</li>
+                <li>Contact and enquiry form integration</li>
+                <li>SEO-friendly page structure</li>
+                <li>Clean and professional UI</li>
+              </ul>
+              <p>
+                <strong>Tech Stack:</strong> HTML, CSS, Bootstrap, JavaScript
+              </p>
+              <div class="project-links">
+                <a href="https://www.nexonsolar.in/" target="_blank"
+                  >Live Demo</a
+                >
+                <!-- <a href="#" target="_blank">GitHub</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 class="section-title">WordPress Projects</h2>
+        <div class="projects-grid">
+          <!-- project 5 -->
+          <div class="project-card">
+            <img src="assets/images/projects/casikart.PNG" alt="casikart" />
+            <div class="project-content">
+              <h3>CASIKART – E-Commerce Website</h3>
+              <p>
+                A fully functional eCommerce website built on WordPress to sell
+                custom mobile accessories like phone covers, skins, and cases.
+              </p>
+              <ul>
+                <li>Responsive and modern eCommerce storefront</li>
+                <li>Product listing with multiple categories</li>
+                <li>Shopping cart & checkout functionality</li>
+                <li>Secure payment options (Cards, UPI, Wallets, COD)</li>
+                <li>Search and filter (Shop page organization)</li>
+                <li>Contact & order tracking pages</li>
+                <li>Newsletter signup integration</li>
+              </ul>
+              <p>
+                <strong>Tech Stack:</strong> WordPress CMS, WooCommerce,
+                Elementor, Theme Customization, Responsive Design, SEO &
+                Performance Plugins
+              </p>
+              <div class="project-links">
+                <a href="https://casikart.com/" target="_blank">Live Demo</a>
+              </div>
+            </div>
+          </div>
+          <!-- project 6 -->
+          <div class="project-card">
+            <img
+              src="assets/images/projects/aadhar.PNG"
+              alt="aadharfoundationngo"
+            />
+            <div class="project-content">
+              <h3>Aadhar Foundation – Social Welfare Website</h3>
+              <p>
+                A WordPress NGO website developed for Aadhar Foundation to
+                showcase their social initiatives including free education,
+                health awareness, women empowerment, and social upliftment.
+              </p>
+              <ul>
+                <li>Responsive and user-friendly NGO website</li>
+                <li>Donation and support information pages</li>
+                <li>Volunteer and contact enquiry forms</li>
+                <li>Gallery for events and campaigns</li>
+                <li>Blog / updates for awareness content</li>
+                <li>SEO-friendly and performance optimized</li>
+              </ul>
+              <p>
+                <strong>Tech Stack:</strong> WordPress CMS, Elementor, Theme
+                Customization, Responsive Design, SEO & Performance Plugins
+              </p>
+              <div class="project-links">
+                <a href="https://aadharfoundationngo.org/" target="_blank"
+                  >Live Demo</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Add more project cards as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="container">
+        <p>© 2025 Deepti Dixit. All Rights Reserved.</p>
+      </div>
+    </footer>
+          <!-- Main JS -->
+   <script src="assets/js/main.js"></script>
+  </body>
 </html>
