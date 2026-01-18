@@ -13,26 +13,34 @@
   <!-- Main CSS -->
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="assets/css/responsive.css" />
-
-
+<!-- emailjs cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 </head>
 
 <body>
 
   <!-- ===== NAVBAR ===== -->
-  <header class="header">
-    <nav class="navbar">
-      <div class="logo">Deepti Dixit</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About</a></li>
-        <li><a href="experience.html">Experience</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+ <header class="header">
+  <nav class="navbar">
+    <div class="logo">Deepti Dixit</div>
+
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <!-- Hamburger -->
+    <div class="menu-toggle" id="mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+</header>
 
   <!-- ===== ABOUT ME SECTION ===== -->
   <section class="about-page">
@@ -40,7 +48,7 @@
       <h2 class="section-title">About Me</h2>
       <div class="about-text">
         <p>
-          I’m <strong>Deepti Dixit</strong>, a Web Developer with <strong>4.5+ years of experience</strong> and
+          I’m <strong>Deepti Dixit</strong>, a Web Developer with <strong>5+ years of experience</strong> and
           hands-on expertise in design, development, training, and real-world project execution. Currently, I’m
           transitioning into a <strong>Full-Stack .NET Developer</strong> role focused on enterprise-level applications.
         </p>
@@ -83,7 +91,7 @@
       <ul class="about-experience">
         <li><strong>Front-End Developer | Ruddersoft:</strong> Developed web pages, mailers, and UI components.</li>
         <li><strong>Front-End Trainer | BTPS:</strong> Delivered HTML, CSS, Bootstrap, JS, WordPress sessions and guided projects.</li>
-        <li><strong>Web Developer | Niktech:</strong> Built WordPress websites, performed manual testing, and trained faculty on school ERP.</li>
+        <li><strong>Web Developer | Niktech:</strong> Built WordPress websites and trained faculty on school ERP.</li>
         <li><strong>Freelancer:</strong> Designed social media creatives & logos, built websites, and managed client coordination.</li>
       </ul>
     </div>
@@ -137,7 +145,8 @@
       <p>© 2025 Deepti Dixit. All Rights Reserved.</p>
     </div>
   </footer>
-
+      <!-- Main JS -->
+   <script src="assets/js/main.js"></script>
 </body>
 
 </html>
